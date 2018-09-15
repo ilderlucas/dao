@@ -12,7 +12,7 @@
 //$user->loadById(2);
  //echo $user;
 
- // lista de usuários - não funcionou
+ // lista de usuários - não funcionou verificar depois
  // $lista = Usuario::getList();
   //echo json_encode($lista);
  
@@ -21,9 +21,20 @@
  //echo json_encode($search);
 
  // carrega usuário usando login e senha
+// $usuario = new Usuario();
+ //$usuario->login("Lucas Oliveira","12567890");
+ //echo $usuario;
+
+// insere e retorna os valores inseridos
+ //$aluno = new Usuario("Oliveira","1990"); // passando os valores para o construtor
+ //$aluno->setDeslogin("Lucas");
+ //$aluno->setDessenha("12345");
+ //$aluno->insert();
+//echo $aluno;
 
  $usuario = new Usuario();
- $usuario->login("Lucas Oliveira","12567890");
+ $usuario->loadById(4);
+ $usuario->update("Professor","prof123");
  echo $usuario;
 
  ?>
