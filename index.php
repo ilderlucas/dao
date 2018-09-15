@@ -12,8 +12,8 @@
 //$user->loadById(2);
  //echo $user;
 
- // lista de usuários - não funcionou verificar depois
- // $lista = Usuario::getList();
+  //lista de usuários - não funcionou verificar depois
+  //$lista = Usuario::getList();
   //echo json_encode($lista);
  
  // pesquisa por por um usuário por uma parte da palavra
@@ -32,9 +32,15 @@
  //$aluno->insert();
 //echo $aluno;
 
+/* Altera um usuário
  $usuario = new Usuario();
  $usuario->loadById(4);
  $usuario->update("Professor","prof123");
+ echo $usuario; */
+
+ $usuario = new Usuario();
+ $usuario->loadById(3);
+ $usuario->delete();
  echo $usuario;
 
  ?>
